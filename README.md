@@ -17,6 +17,18 @@ https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/
 https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/task-table/task/t_CreateATask.html
 
 ### Task Assignment
+
+ServiceNow can automatically assign a task to a user or group based on pre-defined conditions by using Assignment Rules
+
+The Assignment rules module allows you to automatically set a value in the assigned_to and assignment_group fields when a set of conditions occurs. An assignment rule must also meet these additional criteria to run:
+
+- The task record has been created or updated. Assignment rules do not apply to unsaved changes on a form. 
+
+- The task record must be unassigned. The record cannot have an existing value for either the assigned_to or assignment_group fields. Assignment rules cannot overwrite existing assignments (including assignments set by a default value or a previously run assignment rule). 
+
+- The assignment rule is the first rule that matches the table and conditions. If more than one assignment rule matches the conditions, only the rule with the lowest order value runs. 
+
+
 https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/task-table/concept/c_DefineAssignmentRules.html
 
 ### Task Table Fields
